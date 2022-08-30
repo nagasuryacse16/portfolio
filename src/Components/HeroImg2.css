@@ -7,7 +7,7 @@
 
 .hero2__image::before{
     content: "";
-    background: url("../Assets/laptop-wallpaper.jpg");
+    background: url("../Assets/laptop.jpg");
     background-size: cover;
     background-position: center top;
     height: 100%;
@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: 0.5;
 }
 
 .hero2__heading{
