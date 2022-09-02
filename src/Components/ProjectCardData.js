@@ -14,10 +14,10 @@ const ProjectCardData = [
 
     },
     {
-        imgsrc: project2,
-        title: "Netflix Clone Design",
-        text: "In this project, I used TMDB API  to fetch all the movies with react.js and the async function to call API requests using Axios.",
-        view: "https://netflix-clone-app-94961.web.app/"
+        imgsrc: project5,
+        title: "Instagram Reels Design",
+        text: "This is an Instagram reels clone project built using react.js and firebase to store the video information. Responsive design, Material-UI icons are also used for designing the page.",
+        view: "https://instagram-reels-d7d79.web.app/"
 
     },
     {
@@ -35,10 +35,10 @@ const ProjectCardData = [
 
     },
     {
-        imgsrc: project5,
-        title: "Instagram Reels Design",
-        text: "This is an Instagram reels clone project built using react.js and firebase to store the video information. Material-UI icons are also used for designing the page.",
-        view: "https://instagram-reels-d7d79.web.app/"
+        imgsrc: project2,
+        title: "Netflix Clone Design",
+        text: "In this project, I used TMDB API  to fetch all the movies with react.js and the async function to call API requests using Axios.",
+        view: "https://netflix-clone-app-94961.web.app/"
 
     },
     {

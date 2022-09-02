@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import HeroImg2 from '../Components/HeroImg2';
+import HeroImg3 from '../Components/HeroImg3';
+import ContactForm from '../Components/ContactForm';
 
  const Contact = () => {
     return (
         <div>
             <Navbar/>
-            <HeroImg2 heading="CONTACT." text="Let's have a chat."/>
+            <HeroImg3 heading="CONTACT." text="Let's have a chat."/>
+            <ContactForm/>
             <Footer/>
         </div>
     );

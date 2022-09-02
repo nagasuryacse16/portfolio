@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
 import {FaBars, FaTimes} from 'react-icons/fa';
+import MyPhoto from '../Assets/nagasurya.jpeg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -19,22 +21,30 @@ function Navbar() {
 
     return (
         <div className={color ? "nav nav__bg" : 'nav'}> 
-        <Link to="/">
-            <h1>Portfolio</h1>
-        </Link>
-            
+            <div className='nav__profile'>
+                <Link to="/about">
+                    <Avatar
+                        className='header__avatar' 
+                        alt="Nagasurya"
+                        src={MyPhoto}
+                    />
+                </Link>    
+                <Link to="/">
+                    <h1>Portfolio</h1>
+                </Link>
+            </div>
             <ul className={click ? 'nav__menu active' : 'nav__menu'}>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}>Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/Project">Project</Link>
+                    <NavLink to="/Project" className={({ isActive }) => (isActive ? "link-active" : "link")}>Project</NavLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink to="/contact" className={({ isActive }) => (isActive ? "link-active" : "link")}>Contact</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")}>About</NavLink>
                 </li>
             </ul>
 

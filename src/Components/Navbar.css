@@ -9,10 +9,31 @@
     z-index: 10;
 }
 
+.nav__profile{
+    display: flex;
+}
+
+.nav__profile .header__avatar{
+    margin-right: 6px;
+} 
+
 .nav__bg{
     background-color: rgba(0,0,0,0.85);
     transition: 0.5s;
 }
+
+/* Specific styles for non-active links */
+.link {
+    color: #fff;
+  }
+  
+  /* Specific styles for active links */
+  .link-active {
+    color: black;
+    background: rgb(248, 217, 15);
+    padding: 1px 10px;
+    border-radius: 25px;
+  }
 
 .nav__menu{
     display: flex;
@@ -44,6 +65,11 @@
         left: -100%;
         z-index: -3;
         transition: 0.3s;
+    }
+
+    .link-active {
+        color: #fff;
+        background-color: transparent;
     }
 
     .nav__menu.active{

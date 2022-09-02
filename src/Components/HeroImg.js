@@ -11,7 +11,7 @@ const HeroImg =()=>{
             </div>
 
             <div className='hero__content'>
-                <p>HI, I'M A FREELANCER.</p>
+                <p>HI, I'M A</p>
                 <h1>React Developer.</h1>
                 <div>
                     <Link to="/project" className='btn'>
